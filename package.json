@@ -1,0 +1,35 @@
+{
+  "name": "@nfriend/earthquake-zen-garden",
+  "version": "1.0.0",
+  "description": "A simple app that shows a homepage with a list of earthquakes.",
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/nfriend/earthquake-zen-garden.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Nathan Friend",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/nfriend/earthquake-zen-garden/issues"
+  },
+  "homepage": "https://gitlab.com/nfriend/earthquake-zen-garden#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.21.0",
+    "@typescript-eslint/parser": "4.21.0",
+    "eslint": "7.24.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-react": "7.23.2",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "prettier": "2.2.1"
+  },
+  "dependencies": {
+    "@types/react": "17.0.3",
+    "react": "17.0.2"
+  }
+}
