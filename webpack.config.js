@@ -37,6 +37,7 @@ module.exports = function (_env, argv) {
     },
     devServer: {
       hot: false,
+      open: true,
     },
   };
 };
