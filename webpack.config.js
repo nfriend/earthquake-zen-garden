@@ -52,6 +52,7 @@ module.exports = function (_env) {
     devServer: {
       hot: false,
       open: true,
+      historyApiFallback: true,
     },
   };
 };
