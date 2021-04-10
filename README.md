@@ -1,6 +1,6 @@
 # Earthquake Zen Garden
 
-<a href="https://gitlab.com/nfriend/earthquake-zen-garden/pipelines/latest" target="_blank"><img src="https://gitlab.com/nfriend/earthquake-zen-garden/badges/master/pipeline.svg" alt="GitLab pipeline status"></a>
+<a href="https://gitlab.com/nfriend/earthquake-zen-garden/pipelines/latest" target="_blank"><img src="https://gitlab.com/nfriend/earthquake-zen-garden/badges/main/pipeline.svg" alt="GitLab pipeline status"></a>
 
 A simple app that shows a homepage with a list of earthquakes.
 
