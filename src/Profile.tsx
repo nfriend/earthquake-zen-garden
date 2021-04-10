@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PageTitle from './PageTitle';
 
 const data = require('./data.json');
 
@@ -15,7 +16,7 @@ function Nav(): JSX.Element {
 
   return (
     <div className="flex flex-col">
-      <h2 className="text-center my-5 text-lg font-semibold">Profile</h2>
+      <PageTitle title="Profile" />
       <div className="flex flex-col sm:flex-row sm:justify-center items-center sm:items-start">
         <img
           src={data.profile.avatarImage}

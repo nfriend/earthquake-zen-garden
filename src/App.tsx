@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './Nav';
 import Profile from './Profile';
+import List from './List';
 
 function App(): JSX.Element {
   return (
@@ -10,6 +11,9 @@ function App(): JSX.Element {
       <Switch>
         <Route path="/profile">
           <Profile />
+        </Route>
+        <Route>
+          <List />
         </Route>
       </Switch>
     </Router>
