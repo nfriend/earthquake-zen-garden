@@ -2,8 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const path = require('path');
 
-module.exports = function (_env, argv) {
-  const isProduction = argv.mode === 'production';
+module.exports = function (_env) {
+  const isProduction = process.env.NODE_ENV === 'production';
   const isDevelopment = !isProduction;
 
   return {
