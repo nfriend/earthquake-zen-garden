@@ -15,7 +15,12 @@ module.exports = function (_env, argv) {
       filename: 'assets/js/[name].[contenthash:8].js',
       publicPath: '/',
     },
-    plugins: [new HtmlWebpackPlugin(), new ForkTsCheckerWebpackPlugin()],
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: 'Earthquake Zen Garden',
+      }),
+      new ForkTsCheckerWebpackPlugin(),
+    ],
     module: {
       rules: [
         {
@@ -29,6 +34,10 @@ module.exports = function (_env, argv) {
               envName: isProduction ? 'production' : 'development',
             },
           },
+        },
+        {
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader', 'postcss-loader'],
         },
       ],
     },
