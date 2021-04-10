@@ -58,18 +58,21 @@ function List(): JSX.Element {
         <button
           className="col-span-3 mb-2"
           onClick={() => headerClicked(SortColumn.Title)}
+          data-testid="title-header"
         >
           Title
         </button>
         <button
           className="col-span-1 mb-2"
           onClick={() => headerClicked(SortColumn.Magnitude)}
+          data-testid="mag-header"
         >
           Magnitude
         </button>
         <button
           className="col-span-3 mb-2"
           onClick={() => headerClicked(SortColumn.Time)}
+          data-testid="time-header"
         >
           Time
         </button>
@@ -77,9 +80,15 @@ function List(): JSX.Element {
         {earthquakeData.map(({ properties, id }) => {
           return (
             <Fragment key={id}>
-              <span className="col-span-3 text-left">{properties.title}</span>
-              <span className="col-span-1">{properties.mag}</span>
-              <span className="col-span-3">{formatDate(properties.time)}</span>
+              <span className="col-span-3 text-left" data-testid="title">
+                {properties.title}
+              </span>
+              <span className="col-span-1" data-testid="mag">
+                {properties.mag}
+              </span>
+              <span className="col-span-3" data-testid="time">
+                {formatDate(properties.time)}
+              </span>
             </Fragment>
           );
         })}
