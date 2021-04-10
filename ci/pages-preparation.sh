@@ -6,10 +6,6 @@ rm -rf public
 echo 'Copying the "dist" directory to "public"...'
 cp -r dist public
 
-# For more info, see https://docs.gitlab.com/ee/user/project/pages/redirects.html
-echo 'Creating _redirects file...'
-echo '/* /index.html 301' > public/_redirects
-
 # Run gzip on the output and create a .gz version of each relevant file
 # Based on https://webmasters.stackexchange.com/a/119671
 echo "Creating a gzip'd version of each of the relevant static files..."
