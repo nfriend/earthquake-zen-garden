@@ -69,9 +69,9 @@ describe('List.tsx', () => {
 
   const expectTimeSort = (direction: SortDirection) => {
     const expectedTimeOrder = [
-      'Apr 11, 2018, 10:26 PM',
-      'Apr 13, 2018, 02:13 AM',
-      'Apr 14, 2018, 06:00 AM',
+      'Apr 12, 2018, 02:26 AM',
+      'Apr 13, 2018, 06:13 AM',
+      'Apr 14, 2018, 10:00 AM',
     ];
 
     if (direction === SortDirection.Descending) {
