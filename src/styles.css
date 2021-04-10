@@ -11,8 +11,9 @@
   a:visited {
     @apply text-link-visited;
   }
-}
 
-body {
-  font-family: sans-serif;
+  body {
+    @apply font-sans;
+    @apply text-typography;
+  }
 }

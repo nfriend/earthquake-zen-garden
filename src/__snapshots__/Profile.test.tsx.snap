@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile.tsx renders profile details 1`] = `
+<div
+  class="grid grid-cols-3 max-w-sm mx-4"
+  data-testid="profile-details"
+>
+  <h3
+    class="font-bold mb-2 mr-2"
+  >
+    First name
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    Sally
+  </span>
+  <h3
+    class="font-bold mb-2 mr-2"
+  >
+    Last name
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    Wang
+  </span>
+  <h3
+    class="font-bold mb-2 mr-2"
+  >
+    Phone
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    01-343-989-2345
+  </span>
+  <h3
+    class="font-bold mb-2 mr-2"
+  >
+    Email
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    sw@nowhere.ic.kp
+  </span>
+  <h3
+    class="font-bold mb-2 mr-2"
+  >
+    Bio
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+  </span>
+</div>
+`;

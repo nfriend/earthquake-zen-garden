@@ -17,6 +17,7 @@ A simple app that shows a homepage with a list of earthquakes.
 - `npm run lint`: Runs static style checking using [ESLint](https://eslint.org/)
 - `npm run build:production`: Builds a production version of the application
 - `npm run test`: Runs Jest tests
+  - `npm run test -- --watch`: Jest watch mode
 
 ### Deployment
 
