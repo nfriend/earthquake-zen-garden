@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const data = require('./data.json');
 
-function Nav() {
+function Nav(): JSX.Element {
   return (
     <nav className="flex items-center bg-nav p-4">
       <img src={data.site.logoImage} alt="Site logo" className="h-10" />

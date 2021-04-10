@@ -21,6 +21,11 @@ lint:
   script:
     - npm run lint
 
+test:
+  stage: verify
+  script:
+    - npm run test
+
 build:
   stage: build
   needs: []

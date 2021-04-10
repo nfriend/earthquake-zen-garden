@@ -12,10 +12,11 @@ A simple app that shows a homepage with a list of earthquakes.
 
 ### Available `npm` commands
 
-- `npm run start`: Start the [Webpack dev
+- `npm run start`: Starts the [Webpack dev
   server](https://webpack.js.org/configuration/dev-server/)
 - `npm run lint`: Runs static style checking using [ESLint](https://eslint.org/)
 - `npm run build:production`: Builds a production version of the application
+- `npm run test`: Runs Jest tests
 
 ### Deployment
 
