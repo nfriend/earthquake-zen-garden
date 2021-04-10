@@ -17,14 +17,7 @@ module.exports = function (_env) {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'Earthquake Zen Garden',
-        templateContent: `
-          <html>
-            <body>
-              <div id="root"></div>
-            </body>
-          </html>
-        `,
+        favicon: 'src/assets/favicon.png',
       }),
       new ForkTsCheckerWebpackPlugin(),
     ],
