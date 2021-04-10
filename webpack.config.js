@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const path = require('path');
+const data = require(path.resolve(__dirname, 'src/data.json'));
 
 module.exports = function (_env) {
   const isProduction = process.env.NODE_ENV === 'production';
@@ -18,6 +19,10 @@ module.exports = function (_env) {
     plugins: [
       new HtmlWebpackPlugin({
         favicon: 'src/assets/favicon.png',
+        templateParameters: {
+          title: data.site.title,
+          image: data.site.heroImage,
+        },
       }),
       new ForkTsCheckerWebpackPlugin(),
     ],
