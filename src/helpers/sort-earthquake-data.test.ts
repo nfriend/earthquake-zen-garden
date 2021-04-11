@@ -30,7 +30,7 @@ describe('sort-earthquake-data.ts', () => {
     },
   ];
 
-  it.each`
+  test.each`
     column                  | direction                   | expectedOrder
     ${SortColumn.Time}      | ${SortDirection.Ascending}  | ${['3', '1', '2']}
     ${SortColumn.Time}      | ${SortDirection.Descending} | ${['2', '1', '3']}
