@@ -11,9 +11,9 @@ function Detail(): JSX.Element {
 
   const earthquake = data.features.find((f) => f.id === id);
 
-  const pageTitle = earthquake
-    ? earthquake.properties.title
-    : 'Earthquake not found!';
+  if (!earthquake) {
+    return <PageTitle title="Earthquake not found!" />;
+  }
 
   const earthquakeDetails: { label: string; value: string }[] = [
     { label: 'Title', value: earthquake.properties.title },
@@ -26,22 +26,20 @@ function Detail(): JSX.Element {
 
   return (
     <div className="flex flex-col items-center">
-      <PageTitle title={pageTitle} />
-      {earthquake && (
-        <div
-          className="grid grid-cols-3 max-w-md mx-4"
-          data-testid="earthquake-details"
-        >
-          {earthquakeDetails.map(({ label, value }) => {
-            return (
-              <Fragment key={label}>
-                <h3 className="font-bold mr-2">{label}</h3>
-                <span className="col-span-2">{value}</span>
-              </Fragment>
-            );
-          })}
-        </div>
-      )}
+      <PageTitle title={earthquake.properties.title} />
+      <div
+        className="grid grid-cols-3 max-w-md mx-4"
+        data-testid="earthquake-details"
+      >
+        {earthquakeDetails.map(({ label, value }) => {
+          return (
+            <Fragment key={label}>
+              <h3 className="font-bold mr-2">{label}</h3>
+              <span className="col-span-2">{value}</span>
+            </Fragment>
+          );
+        })}
+      </div>
     </div>
   );
 }

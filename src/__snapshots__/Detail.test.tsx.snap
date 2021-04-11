@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail.tsx when the provided earthquake ID is valid renders profile details 1`] = `
+<div
+  class="grid grid-cols-3 max-w-md mx-4"
+  data-testid="earthquake-details"
+>
+  <h3
+    class="font-bold mr-2"
+  >
+    Title
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    M 1.2 - 3km ENE of The Geysers, CA
+  </span>
+  <h3
+    class="font-bold mr-2"
+  >
+    Magnitude
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    1.19
+  </span>
+  <h3
+    class="font-bold mr-2"
+  >
+    Time
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    Apr 13, 2018, 07:25 PM
+  </span>
+  <h3
+    class="font-bold mr-2"
+  >
+    Status
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    automatic
+  </span>
+  <h3
+    class="font-bold mr-2"
+  >
+    Tsunami
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    0
+  </span>
+  <h3
+    class="font-bold mr-2"
+  >
+    Type
+  </h3>
+  <span
+    class="col-span-2"
+  >
+    earthquake
+  </span>
+</div>
+`;
