@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import PageTitle from './PageTitle';
+import { EarthquakeData } from './types/earthquake-data';
 
-const data = require('./data.json');
+const data: EarthquakeData = require('./data.json');
 
 function Nav(): JSX.Element {
   const avatarAltText = `${data.profile.firstName} ${data.profile.lastName}'s profile image`;

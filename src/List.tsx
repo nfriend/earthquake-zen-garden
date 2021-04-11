@@ -2,6 +2,8 @@ import React, { Fragment, useState } from 'react';
 import PageTitle from './PageTitle';
 import { EarthquakeData } from './types/earthquake-data';
 import { sortEarthquakeData } from './helpers/sort-earthquake-data';
+import { Link } from 'react-router-dom';
+import { formatDate } from './helpers/format-date';
 
 const data: EarthquakeData = require('./data.json');
 
@@ -32,17 +34,6 @@ function List(): JSX.Element {
     } else {
       setSortColumn(column);
     }
-  };
-
-  const formatDate = (dateAsNumber: number) => {
-    return new Date(dateAsNumber).toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric',
-      hour: '2-digit',
-      minute: '2-digit',
-      dayPeriod: 'long',
-    });
   };
 
   const earthquakeData = sortEarthquakeData(
@@ -81,7 +72,7 @@ function List(): JSX.Element {
           return (
             <Fragment key={id}>
               <span className="col-span-3 text-left" data-testid="title">
-                {properties.title}
+                <Link to={`/earthquakes/${id}`}>{properties.title}</Link>
               </span>
               <span className="col-span-1" data-testid="mag">
                 {properties.mag}

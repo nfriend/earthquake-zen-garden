@@ -2,33 +2,34 @@ import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import List, { SortDirection } from './List';
-import { EarthquakeData } from './types/earthquake-data';
+import { BrowserRouter } from 'react-router-dom';
 
-jest.mock(
-  './data.json',
-  (): EarthquakeData => ({
-    data: {
-      features: [
-        {
-          id: '1',
-          properties: { title: 'Title A', mag: 5.0, time: 1523600000000 },
-        },
-        {
-          id: '2',
-          properties: { title: 'Title B', mag: 3.0, time: 1523700000000 },
-        },
-        {
-          id: '3',
-          properties: { title: 'Title C', mag: 1.0, time: 1523500000000 },
-        },
-      ],
-    },
-  }),
-);
+jest.mock('./data.json', () => ({
+  data: {
+    features: [
+      {
+        id: '1',
+        properties: { title: 'Title A', mag: 5.0, time: 1523600000000 },
+      },
+      {
+        id: '2',
+        properties: { title: 'Title B', mag: 3.0, time: 1523700000000 },
+      },
+      {
+        id: '3',
+        properties: { title: 'Title C', mag: 1.0, time: 1523500000000 },
+      },
+    ],
+  },
+}));
 
 describe('List.tsx', () => {
   beforeEach(() => {
-    render(<List />);
+    render(
+      <BrowserRouter>
+        <List />
+      </BrowserRouter>,
+    );
   });
 
   const getTableData = () => {
